@@ -4,9 +4,19 @@
 
 <h1>Intro</h1>
 
-<h3 class="intro_name">Saurav Arya</h3>
+<h3 class="intro_name">Saurav Arya_A00236910</h3>
 
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<form id="inputMultiplication">
+    <input name="firstNumber" type="number" step="1" />
+    <input name="secondNumber" type="number" step="1" />
+    <input type="submit" value="submit" />
+    @if (Model.ResultSet == true)
+    {
+        <output>@Model.Result</output>
+    }
+</form>

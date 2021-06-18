@@ -11,7 +11,21 @@ namespace Web_Assignment_1.Pages
     {
         public void OnGet()
         {
-
+            if(firstNumber > 0 && secondNumber > 0)
+            {
+                Result = firstNumber * secondNumber;
+                ResultSet = true;
+            }
         }
+        [FromQuery(Name = "firstNumber")]
+        public int firstNumber { get; set; }
+
+        [FromQuery(Name = "secondNumber")]
+        public int secondNumber { get; set; }
+
+        public int Result { get; set; }
+
+        public bool ResultSet { get; set; }
+
     }
 }
