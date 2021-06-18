@@ -1,0 +1,12 @@
+@page
+@model Web_Assignment_1.Pages.IntroModel
+@{ ViewData["Title"] = "Intro"; }
+
+<h1>Intro</h1>
+
+<h3 class="intro_name">Saurav Arya</h3>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
